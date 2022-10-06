@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portifolio </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/7f535aca7d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="./img/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Linguagens</a></li>
+                <li><a href="#portifolio">Projetos</a></li>
+                <li><a href="#contact">Contatos</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Dev. Front-end</p>
+            <h1>Olá! eu sou o<br> <span>Matheus William</span><br>de Goiás, Brasil</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------sobre----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./img/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Sobre Mim</h1>
+                <p>Olá pessoal, primeiramente, é um prazer que você esteja acessando meu portfolio. Meu nome é Matheus William Canedo Cordeiro,
+                    tenho 24 anos, sou do interior de Goiás, moro atualmente na cidade de Catalão. Sou Bacharel em Ciências Contábeis, tenho 
+                    mais algumas qualificações que você verá neste portfolio. Estou estudando a área de programação mais voltado para "Front-end".</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiências</p>
+                    <p class="tab-links" onclick="opentab('education')">Formações</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HMTL</span><br>Estruturas e Comandos.</li>
+                        <li><span>Java Script</span><br>Comandos e Fucionlidade.</li>
+                        <li><span>CSS3</span><br>Design de Web Sites.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Atual</span><br>Coordenador contábil / Marketing digital + Design / Estudante Front-end + linguagens.</li>
+                        <li><span>2021 - 2022</span><br>Coordenador contábil / Marketing digital + Design / Estudante Front-end + linguagens.</li>
+                        <li><span>2020 - 2021</span><br>Auxiliar contábil / Marketing digital + Design / Estudando Front-End + linguagens.</li>
+                        <li><span>2019 - 2020</span><br>Auxiliar contábil</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020</span><br>Bacharel em Ciências Contábeis.</li>
+                        <li><span>2015</span><br>Ensino Médio Articulado Á E.P. Técnica de nível médio em Mecânica Industrial</li>
+                        <li><span>2012</span><br>Ensino fundamental – Colégio estadual Dona Iayá</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div id="conteiner">
+        <h1 class="sub-title">Linguagens</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML5</h2>
+                <p>HTML é uma abreviação de Hypertext Markup Language, ou seja, Linguagem de Marcação de Hipertexto. Resumindo, o HTML é uma linguagem usada para a publicação de conteúdo (texto, imagens, vídeos, áudio etc.) na web, ela nada mais é que o esqueleto do corpo de um site.</p>
+                <a href="https://pt.wikipedia.org/wiki/HTML5">Leia Mais</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS3</h2>
+                <p>Utilizado para efeitos de transição, imagem, imagem de fundo/background e outros, pode-se criar estilos únicos para seus projetos web, alterando diversos aspectos de design no layout da página.</p>
+                <a href="https://pt.wikipedia.org/wiki/CSS3">Leia Mais</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-square-js"></i>
+                <h2>Java Script</h2>
+                <p>Javascript, ou simplesmente JS, é uma linguagem de programação de uso geral, aplicada principalmente para desenvolvimento web e desenvolvimento de software. Ele e o que faz as funcionalidades de um site por exemplo.</p>
+                <a href="https://pt.wikipedia.org/wiki/JavaScript">Leia Mais</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portifolio">
+    <div class="container">
+        <h1 class="sub-title">Meus Projetos</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./img/barberia.png">
+                <div class="layer">
+                    <h3>BARBEARIA</h3>
+                    <p>Este é um projeto de uma barbearia que fiz durante os cursos usando html e css.</p>
+                    <a href="https://mwilliamm.github.io/barbeariamatheus/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/pokedex.png">
+                <div class="layer">
+                    <h3>POKÉDEX</h3>
+                    <p>Esse é um projeto que fiz de uma Pokédex usando html, css e javascript. Nele você pode procurar por pokemons utilizando seus nomes ou numeros</p>
+                    <a href="https://mwilliamm.github.io/pokedex/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/tbela-nutricionista.png">
+                <div class="layer">
+                    <h3>TABELA NUTRICIONISTA</h3>
+                    <p>Este é um projeto que fiz de uma tabela "Nutricionista" usando html, css e javascript. Nele você pode adicionar, remover e buscar pacientes. Também pode adicionar novos e calcular seu IMC.</p>
+                    <a href="https://mwilliamm.github.io/tabelanutricionista/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/matheus-store.png">
+                <div class="layer">
+                    <h3>MATHEUS STORE</h3>
+                    <p>Este é um projeto que fiz durantes os cursos. Ele se trata de uma pagina geral de jogos e aplicativos. Foi feito usando html e css.</p>
+                    <a href="https://mwilliamm.github.io/matheusstore/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/yugioh.png">
+                <div class="layer">
+                    <h3>MEMORY GAME - YU-GI-OH</h3>
+                    <p>Este é um projeto simples de um jogo da memoria que fiz usando html, css e javascript. Nele você pode testar suas habilidades de memória</p>
+                    <a href="https://mwilliamm.github.io/memorygame-yu-gi-oh/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/lol.png">
+                <div class="layer">
+                    <h3>TELA INICIAL DO LOL</h3>
+                    <p>Este é um projeto simples de uma tela incial de um jogo que eu gosto muito e fiz usando html, css e javascript</p>
+                    <a href="https://mwilliamm.github.io/tela-inicial-lol/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./img/gerador de senhas.png">
+                <div class="layer">
+                    <h3>GERADOR DE SENHAS AUTOMÁTICO</h3>
+                    <p>Este é um projeto simples de um gerador de senhas automático que fiz usando html, css e javascript</p>
+                    <a href="https://mwilliamm.github.io/geradordesenhas/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Meus Contatos</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>matheuswilliam.dev@outlook.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>(64)9 9985-5556</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/matheuswilliamJacck/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_transition=0&show_community_review_changes=0&show_follower_visibility_disclosure=0"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/mwilliam_____/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/matheus-william-canedo-cordeiro-80b1b41b6/"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="./img/Curriculo Matheus.pdf" download class="btn btn2">Dowload Currículo</a>
+            </div>
+            <div class="contact-right"></div>
+            <form id="form00">
+                <input type="text" name="name" id="name" placeholder="Seu Nome" required></input>
+                <input type="email" name="email" id="email" placeholder="Seu Email" required></input>
+                <textarea name="message" rows="6" id="message" placeholder="Menssagem"></textarea>
+                <button type="submit" class="btn btn2" id="enviar">Enviar</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Matheus. Catalão-Go - 2022</p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+         }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }  
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+</body>
+<script src="./js/script.js"></script>
+</html>
